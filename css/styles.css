@@ -10,33 +10,37 @@ img {
 
 .ace {
     box-shadow: 0 3px 10px;
-}
-
-.one {
-    margin-left: 200px;
+    position: absolute;
 }
 
 #first {
     transform: rotate(-40deg);
     z-index: -2;
+    left: 200px;
 }
 
 #second {
     transform: rotate(-15deg);
     z-index: -1;
+    left: 270px;
 }
 
 #third {
     transform: rotate(0deg);
     z-index: 0;
+    left: 310px;
 }
 
 #fourth {
     transform: rotate(15deg);
     z-index: 1;
+    left: 380px;
+    top: 180px;
 }
 
 #fifth {
     transform: rotate(30deg);
     z-index: 2;
+    left: 420px;
+    top: 200px;
 }
