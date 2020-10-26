@@ -1,0 +1,42 @@
+img {
+    /*border-radius: 5%;*/
+    width: 210px;
+    height: 332.15px;
+}
+
+.card-container {
+    margin-top: 150px;
+}
+
+.ace {
+    box-shadow: 0 3px 10px;
+}
+
+.one {
+    margin-left: 200px;
+}
+
+#first {
+    transform: rotate(-40deg);
+    z-index: -2;
+}
+
+#second {
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+#third {
+    transform: rotate(0deg);
+    z-index: 0;
+}
+
+#fourth {
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+#fifth {
+    transform: rotate(30deg);
+    z-index: 2;
+}
