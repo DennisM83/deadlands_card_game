@@ -21,20 +21,20 @@ div {
 #first {
     transform: rotate(-40deg);
     z-index: -2;
-    left: 300px;
+    left: 30px;
     top: 30px;
 }
 
 #second {
     transform: rotate(-15deg);
     z-index: -1;
-    left: 150px;
+    right: 130px;
 }
 
 #third {
     transform: rotate(0deg);
     z-index: 0;
-    /*left: 310px;*/
+    right: 250px;
 }
 
 #fourth {
@@ -52,14 +52,17 @@ div {
 }
 
 @media only screen and (max-width: 812px) {
+    .card-container {
+        margin: 200px auto 0 auto;
+    }
     img {
         /*border-radius: 5%;*/
-        width: 51px;
-        height: 87px;
+        width: 105px;
+        height: 166.1px;
     }
 
     #first {
-        transform: rotate(0deg);
+        transform: rotate(-30deg);
         left: 0;
         top: 0;
     }
@@ -71,6 +74,7 @@ div {
     
     #third {
         transform: rotate(0deg);
+        left: 0;
     }
     
     #fourth {
