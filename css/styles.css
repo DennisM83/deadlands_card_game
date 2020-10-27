@@ -4,43 +4,86 @@ img {
     height: 332.15px;
 }
 
-.card-container {
-    margin-top: 150px;
+div {
+    border: red solid 1px;
 }
+
+/*.card-container {
+    margin-top: 150px;
+}*/
 
 .ace {
     box-shadow: 0 3px 10px;
-    position: absolute;
+    position: relative;
+    /*margin: 0 auto 0 auto;*/
 }
 
 #first {
     transform: rotate(-40deg);
     z-index: -2;
-    left: 200px;
+    left: 300px;
+    top: 30px;
 }
 
 #second {
     transform: rotate(-15deg);
     z-index: -1;
-    left: 270px;
+    left: 150px;
 }
 
 #third {
     transform: rotate(0deg);
     z-index: 0;
-    left: 310px;
+    /*left: 310px;*/
 }
 
 #fourth {
     transform: rotate(15deg);
     z-index: 1;
-    left: 380px;
-    top: 180px;
+    right: 150px;
+    top: 20px;
 }
 
 #fifth {
     transform: rotate(30deg);
     z-index: 2;
-    left: 420px;
-    top: 200px;
+    right: 300px;
+    top: 30px;
+}
+
+@media only screen and (max-width: 812px) {
+    img {
+        /*border-radius: 5%;*/
+        width: 51px;
+        height: 87px;
+    }
+
+    #first {
+        transform: rotate(0deg);
+        left: 0;
+        top: 0;
+    }
+    #second {
+        transform: rotate(-15deg);
+        z-index: -1;
+        left: 0;
+    }
+    
+    #third {
+        transform: rotate(0deg);
+    }
+    
+    #fourth {
+        transform: rotate(15deg);
+        z-index: 1;
+        right: 0;
+        top: 0;
+    }
+    
+    #fifth {
+        transform: rotate(30deg);
+        z-index: 2;
+        right: 0;
+        top: 0;
+    }
 }
