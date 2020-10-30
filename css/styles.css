@@ -8,10 +8,6 @@ div {
     border: red solid 1px;
 }
 
-/*.card-container {
-    margin-top: 150px;
-}*/
-
 .ace {
     box-shadow: 0 3px 10px;
     position: relative;
@@ -51,14 +47,18 @@ div {
     top: 30px;
 }
 
+/*******************************************/
+/*********** FOR MOBILE SCREENS ************/
+/*******************************************/
+
 @media only screen and (max-width: 812px) {
     .card-container {
-        margin: 200px auto 0 auto;
+        margin: 150px auto 0 auto;
     }
     img {
         /*border-radius: 5%;*/
-        width: 105px;
-        height: 166.1px;
+        width: 84px;
+        height: 132.88px;
     }
 
     #first {
