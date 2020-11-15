@@ -24,9 +24,9 @@
     </div>
     <!-- Current Charater -->
     <!-- Playing Cards -->
-    <div class="container-fluid col-sm-9 card-container">
-        <div class="row">
-            <img class="ace rounded mx-auto" id="first" src="img/B_T_Card.png" onclick="cardFlip()"
+    <div class="container-fluid col-sm-9">
+        <div class="row card-container">
+            <!--<img class="ace rounded mx-auto" id="first" src="img/B_T_Card.png" onclick="cardFlip()"
                 alt="back of the card">
             <img class="ace rounded mx-auto" id="second" src="img/B_T_Card.png" onclick="cardFlip()"
                 alt="back of the card">
@@ -35,9 +35,23 @@
             <img class="ace rounded mx-auto" id="fourth" src="img/B_T_Card.png" onclick="cardFlip()"
                 alt="back of the card">
             <img class="ace rounded mx-auto" id="fifth" src="img/B_T_Card.png" onclick="cardFlip()"
-                alt="back of the card">
+                alt="back of the card">-->
         </div>
     </div> <!-- Playing Cards -->
+
+    <script>
+        
+        /*let container = document.querySelector('.card-container');*/
+
+        /*let container = document.querySelector('.card-container');*/
+
+        let img = document.createElement('img');
+
+        img.src = "img/Ace_of_spade.png";
+
+        document.querySelector('.card-container').appendChild(img);
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
