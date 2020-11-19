@@ -23,8 +23,8 @@
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Select # of Cards
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    </ul>
                   </div>
             </div>
             <div class="col">last character card</div>
@@ -48,33 +48,23 @@
     </div> <!-- Playing Cards -->
 
     <script>
-        
-        /*let container = document.querySelector('.card-container');*/
-
-        /*let container = document.querySelector('.card-container');*/
-
-        /*let img = document.createElement('img');
-
-        img.src = "img/B_T_Card.png";
-
-        document.querySelector('.card-container').appendChild(img);*/
 
         let numbers = [1, 2, 3, 4, 5];
 
         for (i = 0; i < numbers.length; i++) {
-            let a = document.createElement("a");
-            a.classList.add("dropdown-item");
-            a.text = numbers[i];
+            let a = document.createElement("li");
+            a.innerHTML = numbers[i];
+            a.classList.add("dropdown-item" + numbers[i]);
             console.log(document.querySelector(".dropdown-menu").appendChild(a));
         }
 
-        let dropdown = document.querySelector('.dropdown-item');
+        let dropdown = document.querySelector(".dropdown-menu");
+
+        console.log(document.querySelector('.dropdown-item'));
 
         sayHi = () => {
             let img = document.createElement('img');
-
             img.src = "img/B_T_Card.png";
-
             document.querySelector('.card-container').appendChild(img);
         }
 
